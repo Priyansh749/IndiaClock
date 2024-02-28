@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00d2ff, #3a7bd5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.app {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.time-info {
+    font-weight: bold;
+}
+
+.date {
+    color: #007bff;
+    font-size: 30px;
+    margin-top: 5px !important;
+}
+
+.time {
+    color: #28a745;
+    font-size: 30px;
+}
+
+.time-info {
+    display: flex;
+    justify-content: center;
+}
+
+.date,
+.time {
+    margin: 0 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .app {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    .header {
+        font-size: 28px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .date {
+        font-size: 15px;
+    }
+
+    .time {
+        font-size: 15px;
+    }
+}
+
+/* Styles for medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .app {
+        width: 80%;
+        margin: auto;
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .date {
+        font-size: 24px;
+    }
+
+    .time {
+        font-size: 28px;
+    }
+}
+
+/* Styles for larger screens */
+@media only screen and (min-width: 1025px) {
+    .app {
+        width: 60%;
+        margin: auto;
+    }
+
+    .header {
+        font-size: 36px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 28px;
+    }
+
+    .time {
+        font-size: 32px;
+    }
+}
